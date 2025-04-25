@@ -1,5 +1,7 @@
 .env
 .test.py
+.moderator.py
+.bash_profile
 __pycache__/
 *.pyc
 *.pyo
