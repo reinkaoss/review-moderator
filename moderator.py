@@ -2,8 +2,12 @@ import asyncio
 import json
 import re
 import time
+import dotenv
+import os
 from playwright.async_api import async_playwright
 from openai import OpenAI
+from dotenv import load_dotenv
+load_dotenv()
 
 # === OpenAI Assistant Moderation ===
 def get_moderation_judgment(text: str) -> dict:

@@ -7,6 +7,16 @@ import os
 from playwright.async_api import async_playwright
 from openai import OpenAI
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
+
+# # 1) Build the path to your .env file
+# env_path = Path(__file__).parent / ".env"
+# load_dotenv(dotenv_path=env_path, override=True)
+
+# # 2) Now fetch & print the first few chars of the key
+# api_key = os.getenv("OPENAI_API_KEY")
+# print("🔑 OPENAI_API_KEY:", api_key[:8] + "…") 
 
 # === OpenAI Assistant Moderation ===
 def get_moderation_judgment(text):
